@@ -67,7 +67,7 @@ function drawCart() {
         total += i.price * i.quantity
         if (i.quantity) {
             template += `
-            <div class="item"><b>${i.flavorName}</b>${i.quantity} - $${(i.quantity * i.price).toFixed(2)}</div>
+            <div class="item"><b>${i.flavorName}</b><span>${i.quantity} - $${(i.quantity * i.price).toFixed(2)}</span></div>
             `
         }
     })
